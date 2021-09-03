@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Add Scrape_practice.ipynb
+Scrape_practice.ipynb
+
 # C extensions
 *.so
 
