@@ -41,13 +41,27 @@
           />
         </div>
         <div class="col-md-4">
-          <!-- Mars Facts -->
+          <!-- Section for Mars Facts -->
           <div class="row" id="mars-facts">
             <h4>Mars Facts</h4>
             {{ mars.facts | safe }}
           </div>
         </div>
       </div>
+      <!-- Section for Mars Hemispheres -->
+      <div class="row" id="mars-hemisphere">
+        <div class="col-md-12">
+            <h2><center>Mars Hemispheres</center></h2>
+            {% for hemisphere in mars.hemispheres %}
+                <div class="col-md-6">
+                    <div class = "thumbnail">
+                        <img src="{{hemisphere.img_url}}"
+                          <h2><b>{{hemisphere.title}}</b></h2>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
+
   </body>
 </html>
